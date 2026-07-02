@@ -50,10 +50,10 @@ body {
   display: flex;
   align-items: center;
   padding: 0 30px;
-  left: 2rem;
-  right: 2rem;
+  left: 3rem;
+  right: 3rem;
   border-radius: 20px 20px 0 0;
-  top: 0.7rem;
+  top: 1rem;
   border-bottom: 5px solid #5555aa;
 }
 
@@ -90,7 +90,7 @@ body {
 .home-window {
   position: absolute;
   top: 5rem;
-  left: 2rem;
+  left: 3rem;
   /* width: 40rem; */
   background: #5050a0;
   border: 5px solid #7070b8;
@@ -232,4 +232,172 @@ body {
   text-align: center;
   text-shadow: 1px 1px 2px #000;
   line-height: 1.2;
+}
+
+/* chat bubble */
+.chat-bubble {
+  position: absolute;
+  top: 5rem;
+  right: 15rem;
+  background: #f4f2ff;
+  border: 2px solid #7070b8;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "vt323", monospace;
+  font-size: 30px;
+  color: #5050a0;
+  cursor: pointer;
+  z-index: 20;
+  transition: transform 0.1s ease-in-out;
+}
+
+.chat-bubble:hover {
+  transform: scale(1.05);
+  background: #fff;
+}
+.chat-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 16px;
+  border: 5px solid transparent;
+  border-top-color: #2a2a52;
+}
+.chat-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 17px;
+  border: 4px solid transparent;
+  border-top-color: #f4f2ff;
+  z-index: 1;
+}
+
+/* SOCIALS */
+.socials {
+  position: absolute;
+  bottom: 2rem;
+  left: 3rem;
+  right: 50rem;
+  height: 5rem;
+  /* background: #2a2a52;
+  border: 2px solid #5555aa; */
+  background: #a0a0e8;
+  border: 2px solid #7070b8;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  gap: 16px;
+  z-index: 20;
+  padding: 0 20px;
+  width: fit-content;
+}
+
+.soc-ico {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "vt323", monospace;
+  font-size: 24px;
+  color: #e0ddff;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+/* MUSIC PLAYER */
+.music-player {
+  position: absolute;
+  right: 3rem;
+  bottom: 2rem;
+  width: 400px;
+  background: #c8c8ff;
+  border: 2px solid #7070b8;
+  border-radius: 20px;
+  z-index: 20;
+}
+
+.mp-titlebar {
+  background: #5050a0;
+  padding: 3px 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.mp-title {
+  font-family: "vt323", monospace;
+  font-size: 24px;
+  color: #e0ddff;
+  flex: 1;
+}
+
+.mp-close {
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  padding: 1px 5px;
+}
+
+.mp-body {
+  background: #1a1a3e;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+}
+
+.mp-track {
+  font-family: "vt323", monospace;
+  font-size: 26px;
+  color: #a0d0ff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mp-artist {
+  font-family: "vt323", monospace;
+  font-size: 20px;
+  color: #a0d0ff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mp-progress {
+  height: 10px;
+  background: #0a0a2e;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.mp-fill {
+  height: 100%;
+  background: #a0a0e8;
+  width: 35%;
+  border-radius: 2px;
+  transition: width 0.5s linear;
+}
+
+.mp-controls {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.mp-btn {
+  background: #2a2a5a;
+  border: 1px solid #5050a0;
+  color: #a0d0ff;
+  font-size: 24px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: monospace;
+  margin-bottom: 10px;
 }
