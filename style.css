@@ -8,18 +8,28 @@
 
 @import url("https://fonts.googleapis.com/css2?family=VT323&family=Courier+Prime&display=swap");
 
-:root {
+/* :root {
   --titlebar-color: #bcc2fd;
   --titlebar-text-color: #000;
   --titlebar-height: 44px;
   --titlebar-padding: 20px 30px;
   --titlebar-radius: 20px 20px 0 0;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
+html {
+  height: 100%;
+  overflow: hidden;
+}
 body {
   font-family: "VT323", monospace;
   /* font-family: "Courier Prime", monospace; */
   margin: 0;
+  height: 100%;
 }
 
 .grid-bg {
@@ -39,11 +49,11 @@ body {
   background: #2a2a52;
   display: flex;
   align-items: center;
-  padding: 20px 30px;
+  padding: 0 30px;
   left: 2rem;
   right: 2rem;
   border-radius: 20px 20px 0 0;
-  top: 1rem;
+  top: 0.7rem;
   border-bottom: 5px solid #5555aa;
 }
 
@@ -79,7 +89,7 @@ body {
 /* home window */
 .home-window {
   position: absolute;
-  top: 8rem;
+  top: 5rem;
   left: 2rem;
   /* width: 40rem; */
   background: #5050a0;
@@ -88,7 +98,7 @@ body {
   z-index: 20;
   box-shadow:
     inset 0 0 10px #7070b8,
-    0 0 10px #7070b8;
+    0 0 5px #7070b8;
 }
 
 .home-tb {
@@ -109,7 +119,7 @@ body {
 .home-content {
   background: #f4f2ff;
   border-top: 1px solid #7070b8;
-  padding: 1.5rem 2rem;
+  padding: 0.5rem 1.5rem 1rem;
 }
 
 .home-content-name {
@@ -120,7 +130,7 @@ body {
 }
 
 .home-content-body {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 8px;
   color: #5050a0;
@@ -146,4 +156,80 @@ body {
   background: #a0a8f0;
   cursor: pointer;
   color: #3a3a6e;
+  transform: scale(1.1);
+}
+
+/* folders */
+.folders {
+  position: absolute;
+  left: 3rem;
+  top: 21.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 50px;
+  z-index: 30;
+  width: 200px;
+}
+
+.folder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.folder:hover {
+  transform: scale(1.1);
+}
+
+.about-btn:active,
+.folder:active {
+  transform: scale(0.9);
+}
+
+.folder-icon {
+  position: relative;
+  width: 80px;
+  height: 60px;
+}
+
+.folder-tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 12px;
+  background: #a0a0e8;
+  border: 1.5px solid #7070b8;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+}
+
+.folder-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 10px;
+  background: #bcc2fd;
+  border: 2px solid #7070b8;
+  border-radius: 0 4px 6px 6px;
+}
+
+.folder:hover .folder-body {
+  background: #c8c8ff;
+}
+.folder:hover .folder-tab {
+  background: #b8b8f8;
+}
+
+.folder-name {
+  font-family: "vt323", monospace;
+  font-size: 20px;
+  color: #e0ddff;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+  line-height: 1.2;
 }

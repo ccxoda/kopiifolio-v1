@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
+
   <body>
     <div class="grid-bg"></div>
     <div class="titlebar">
@@ -32,6 +33,46 @@
 
     <div class="kopii-png">
       <img src="assets/ko-png.png" alt="kopii" />
+    </div>
+
+    <div class="folders">
+      <div class="folder" onclick="openPop('skillsTools')">
+        <div class="folder-icon">
+          <!-- <img src="assets/folder.png" alt="folder" /> -->
+          <!-- <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="48"
+            height="48"
+          >
+            <path fill="#7070b8" d="M10 4H2v16h20V6H12l-2-2z" />
+          </svg> -->
+          <div class="folder-tab"></div>
+          <div class="folder-body"></div>
+        </div>
+        <div class="folder-name">skills & tools</div>
+      </div>
+      <div class="folder" onclick="openPop('codingProjects')">
+        <div class="folder-icon">
+          <div class="folder-tab"></div>
+          <div class="folder-body"></div>
+        </div>
+        <div class="folder-name">coding projects</div>
+      </div>
+      <div class="folder" onclick="openPop('certifications')">
+        <div class="folder-icon">
+          <div class="folder-tab"></div>
+          <div class="folder-body"></div>
+        </div>
+        <div class="folder-name">certifications</div>
+      </div>
+      <div class="folder" onclick="openPop('artworks')">
+        <div class="folder-icon">
+          <div class="folder-tab"></div>
+          <div class="folder-body"></div>
+        </div>
+        <div class="folder-name">artworks</div>
+      </div>
     </div>
   </body>
 </html>
