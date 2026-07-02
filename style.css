@@ -8,38 +8,142 @@
 
 @import url("https://fonts.googleapis.com/css2?family=VT323&family=Courier+Prime&display=swap");
 
-body {
-  background-color: #282d6d;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 30px 30px;
-  font-family: "Courier Prime", monospace;
+:root {
+  --titlebar-color: #bcc2fd;
+  --titlebar-text-color: #000;
+  --titlebar-height: 44px;
+  --titlebar-padding: 20px 30px;
+  --titlebar-radius: 20px 20px 0 0;
 }
 
+body {
+  font-family: "VT323", monospace;
+  /* font-family: "Courier Prime", monospace; */
+  margin: 0;
+}
+
+.grid-bg {
+  position: absolute;
+  inset: 0;
+  background-color: #3a3a6e;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* taskbar */
 .titlebar {
   position: absolute;
   height: 44px;
-  background: #bcc2fd;
+  background: #2a2a52;
   display: flex;
   align-items: center;
   padding: 20px 30px;
-  left: 1rem;
-  right: 1rem;
+  left: 2rem;
+  right: 2rem;
   border-radius: 20px 20px 0 0;
   top: 1rem;
+  border-bottom: 5px solid #5555aa;
 }
 
 .tb-title {
   font-size: 40px;
-  color: #000;
   letter-spacing: 1px;
   flex: 1;
-  font-weight: bold;
+  color: #e0ddff;
 }
 
 .tb-clock {
   font-size: 34px;
-  color: #000;
   letter-spacing: 1px;
+  color: #e0ddff;
+}
+
+.kopii-png {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kopii-png img {
+  height: 100%;
+  width: auto;
+  object-position: center bottom;
+  margin-left: auto;
+  z-index: 10;
+}
+
+/* home window */
+.home-window {
+  position: absolute;
+  top: 8rem;
+  left: 2rem;
+  /* width: 40rem; */
+  background: #5050a0;
+  border: 5px solid #7070b8;
+  border-radius: 4px;
+  z-index: 20;
+  box-shadow:
+    inset 0 0 10px #7070b8,
+    0 0 10px #7070b8;
+}
+
+.home-tb {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 4px 4px 0 0;
+}
+
+.home-tb-title {
+  font-size: 30px;
+  letter-spacing: 1px;
+  flex: 1;
+  color: #e0ddff;
+}
+
+.home-content {
+  background: #f4f2ff;
+  border-top: 1px solid #7070b8;
+  padding: 1.5rem 2rem;
+}
+
+.home-content-name {
+  font-size: 50px;
+  padding-bottom: 8px;
+  flex: 1;
+  color: #000;
+}
+
+.home-content-body {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  color: #5050a0;
+  font-family: "Courier Prime", monospace;
+}
+
+.about-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 25px;
+  background: #bcc2fd;
+  border: 1px solid #7070b8;
+  align-items: center;
+  border-radius: 30px;
+  width: fit-content;
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.about-btn:hover {
+  background: #a0a8f0;
+  cursor: pointer;
+  color: #3a3a6e;
 }
