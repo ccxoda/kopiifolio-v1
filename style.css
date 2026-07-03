@@ -497,7 +497,7 @@ body {
 .popup-title {
   background: #f4f2ff;
   border-top: 1px solid #7070b8;
-  padding: 0.5rem 1.5rem 1rem;
+  padding: 0.5rem 1.5rem 0;
 }
 
 .popup-title h3 {
@@ -509,8 +509,12 @@ body {
   padding-bottom: 3px;
 }
 
+.popup-body {
+  padding: 0.5rem 1.5rem 1rem;
+}
+
 .dropdown {
-  border: 2px solid #1a1a3e;
+  border: 2px solid #7070b8;
   border-radius: 4px;
   margin-bottom: 6px;
   overflow: hidden;
@@ -542,10 +546,10 @@ body {
 .dropdown-body {
   display: none;
   padding: 10px 12px;
-  font-size: 16px;
+  font-size: 18px;
   color: #1a1a3e;
   background: #f4f2ff;
-  line-height: 1.8;
+  /* line-height: 1.8; */
 }
 
 .dropdown.open .dropdown-body {
