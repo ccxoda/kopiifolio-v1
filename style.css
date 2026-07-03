@@ -310,8 +310,6 @@ body {
 /* MUSIC PLAYER */
 .music-player {
   position: absolute;
-  right: 3rem;
-  bottom: 2rem;
   width: 400px;
   background: #c8c8ff;
   border: 2px solid #7070b8;
@@ -400,4 +398,56 @@ body {
   border-radius: 2px;
   font-family: monospace;
   margin-bottom: 10px;
+}
+
+/*POPUPS DESIGN*/
+.popup {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  z-index: 40;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
+  min-width: 240px;
+  max-width: 450px;
+}
+
+.popup.open {
+  display: flex;
+}
+
+.popup-bar {
+  background: #5050a0;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: move;
+}
+
+.popup-close {
+  font-family: "vt323", monospace;
+  font-size: 14px;
+  color: #fff;
+  background: #8050a0;
+  border: 1px solid #c080d0;
+  padding: 0px 6px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.popup-body {
+  background: #f4f2ff;
+  border-top: 1px solid #7070b8;
+  padding: 0.5rem 1.5rem 1rem;
+}
+
+.popup-body h3 {
+  font-family: "VT323", monospace;
+  font-size: 20 px;
+  color: #3a3a6e;
+  margin-bottom: 6px;
+  border-bottom: 2px solid #c080d0;
+  padding-bottom: 3px;
 }

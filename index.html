@@ -15,6 +15,7 @@
       <div class="tb-clock" id="tb-clock">00:00</div>
     </div>
 
+    <!---HOME WINDOW-->
     <div class="home-window">
       <div class="home-tb">
         <div class="home-tb-title">home</div>
@@ -28,6 +29,17 @@
           be patient as i continue to update it. thank you for visiting! -->
         </div>
         <div class="about-btn" onclick="openPop('about')">About</div>
+      </div>
+    </div>
+
+    <!--ABOUT PAGE-->
+    <div class="popup" id="popup-about" style="left: 260px; top: 65px">
+      <div class="popup-bar" onmousedown="startDrag(event, 'popup-about')">
+        <span class="home-tb-title">about kopii</span>
+        <span class="popup-close" onclick="closePop('about')">[x]</span>
+      </div>
+      <div class="popup-body">
+        <h3>[■■■■■■■■■■] 100% Loading kopiium...⋙</h3>
       </div>
     </div>
 
@@ -92,8 +104,8 @@
       <div class="soc-ico" title="Twitter/X">✕</div>
     </div>
 
-    <div class="music-player">
-      <div class="mp-titlebar">
+    <div class="music-player" id="popup-mp">
+      <div class="mp-titlebar" onmousedown="startDrag(event, 'popup-mp')">
         <div class="mp-title">music player</div>
         <div class="mp-close">[x]</div>
       </div>
