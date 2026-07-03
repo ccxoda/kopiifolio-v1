@@ -72,6 +72,11 @@ document.addEventListener("mouseup", () => {
   drag = null;
 });
 
+function toggleDropdown(header) {
+  const dropdown = header.parentElement;
+  dropdown.classList.toggle("open");
+}
+
 function initMusicPlayer() {
   const mp = document.getElementById("popup-mp");
   const dr = document.documentElement.getBoundingClientRect();

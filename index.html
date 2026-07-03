@@ -38,8 +38,27 @@
         <span class="home-tb-title">about kopii</span>
         <span class="popup-close" onclick="closePop('about')">[x]</span>
       </div>
-      <div class="popup-body">
+      <div class="popup-title">
         <h3>[■■■■■■■■■■] 100% Loading kopiium...⋙</h3>
+      </div>
+      <div class="about-profile">
+        <div class="about-avatar">
+          <img src="assets/kopii icon.png" />
+        </div>
+        <p class="about-bio">
+          Aspiring UI/UX designer and IT student with experience in frontend and
+          backend fundamentals, and visual design. Passionate about creating
+          user-centered interfaces through a combination of design thinking and
+          technical skills.
+        </p>
+      </div>
+      <div class="about-meta">
+        <div clas="about-tags">
+          <span>🎓 cs student</span><br />
+          <span>📍 ciit college of arts and technoology</span><br />
+          <span>📍 philippines</span><br />
+        </div>
+        <a href="#" class="about-cv">Download CV</a>
       </div>
     </div>
 
@@ -91,6 +110,29 @@
           </div>
           <div class="folder-name">artworks</div>
         </a>
+      </div>
+    </div>
+
+    <!--SKILLS & TOOLS FOLDER-->
+    <div class="popup" id="popup-skillsTools" style="left: 240px; top: 80px">
+      <div
+        class="popup-bar"
+        onmousedown="startDrag(event, 'popup-skillsTools')"
+      >
+        <span class="home-tb-title">skills & tools</span>
+        <span class="popup-close" onclick="closePop('skillsTools')">[x]</span>
+      </div>
+      <div clas="popup-title">
+        <h3>skills & tools i've learned</h3>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown(this)">
+          <span>Frontend & Design</span>
+          <span class="dropdown-btn">v</span>
+        </div>
+        <div class="dropdown-body">
+          HTML5 / CSS / JAVASCRIPT / BOOTSTRAP / JQUERY / REACT / NEXTJS
+        </div>
       </div>
     </div>
 
