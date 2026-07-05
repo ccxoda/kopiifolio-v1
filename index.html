@@ -53,8 +53,8 @@
       </div>
       <div class="about-meta">
         <div class="about-tags" style="font-size: 20px">
-          <span>🎓 cs student</span>
-          <span>📍 ciit college of arts and technology</span>
+          <span>ui/ux - frontend dev - game designer</span>
+          <span>🗣️ filipino, english</span>
           <span>📍 philippines</span>
         </div>
         <a href="#" class="about-cv">Download CV</a>
@@ -80,15 +80,6 @@
     <div class="folders">
       <div class="folder" onclick="openPop('skillsTools')">
         <div class="folder-icon">
-          <!-- <img src="assets/folder.png" alt="folder" /> -->
-          <!-- <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="48"
-            height="48"
-          >
-            <path fill="#7070b8" d="M10 4H2v16h20V6H12l-2-2z" />
-          </svg> -->
           <div class="folder-tab"></div>
           <div class="folder-body"></div>
         </div>
@@ -137,39 +128,12 @@
         <h3>100% Loading proficiency...⋙</h3>
       </div>
       <div class="popup-body">
-        <div class="dropdown">
-          <div class="dropdown-header" onclick="toggleDropdown(this)">
-            <span>Frontend & Design</span>
-            <span class="dropdown-btn">v</span>
-          </div>
-          <div class="dropdown-body">
-            HTML5 / CSS / JAVASCRIPT / BOOTSTRAP<br />JQUERY / REACT / NEXTJS
-          </div>
-        </div>
-        <div class="dropdown">
-          <div class="dropdown-header" onclick="toggleDropdown(this)">
-            <span>Backend & Database</span>
-            <span class="dropdown-btn">v</span>
-          </div>
-          <div class="dropdown-body">
-            JAVA / C++ / PHP / NODE.Js<br />MYSQL / MONGODB
-          </div>
-        </div>
-        <div class="dropdown">
-          <div class="dropdown-header" onclick="toggleDropdown(this)">
-            <span>Tools</span>
-            <span class="dropdown-btn">v</span>
-          </div>
-          <div class="dropdown-body">
-            VISUAL STUDIO CODE / NETBEANS<br />GITHUB / FIGMA / CLIP STUDIO
-            PAINT
-          </div>
-        </div>
+        <div id="skills-list"></div>
       </div>
     </div>
 
     <!--CERTIFS FOLDER-->
-    <div class="popup" id="popup-certifs" style="left: 250px; top: 90px">
+    <div class="popup" id="popup-certifs" style="left: 300px; top: 250px">
       <div class="popup-bar" onmousedown="startDrag(event, 'popup-certifs')">
         <span class="home-tb-title">certifications</span>
         <span class="popup-close" onclick="closePop('certifs')">[x]</span>
@@ -178,26 +142,6 @@
         <h3>100% Loading awards...⋙</h3>
       </div>
       <div class="popup-body">
-        <!-- <div class="dropdown">
-          <div class="dropdown-header" onclick="toggleDropdown(this)">
-            <span>Educational Background</span>
-            <span class="dropdown-btn">v</span>
-          </div>
-          <div class="dropdown-body">
-            Bachelor of Science in Computer Science<br />
-            TVL-ICT Computer Programming Strand
-          </div>
-        </div>
-        <div class="dropdown">
-          <div class="dropdown-header" onclick="toggleDropdown(this)">
-            <span>Work Experience</span>
-            <span class="dropdown-btn">v</span>
-          </div>
-          <div class="dropdown-body">
-            Freelance Digital Artist<br />MGHS Solutions and Advertising
-            Services
-          </div>
-        </div> -->
         <div class="dropdown">
           <div class="dropdown-header" onclick="toggleDropdown(this)">
             <span>Certifications</span>
@@ -212,12 +156,25 @@
         </div>
         <div class="dropdown">
           <div class="dropdown-header" onclick="toggleDropdown(this)">
+            <span>Academic Awards</span>
+            <span class="dropdown-btn">v</span>
+          </div>
+          <div class="dropdown-body">
+            Received Dean’s List Award for the 1st Term, A.Y. 2023-2024.<br />
+            Received Dean’s List Award for the 1st Term, A.Y. 2025–2026.<br />
+            Graduated with Academic Excellence Award (With Honors).<br />
+            Graduated with the Research and Innovation Award.
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-header" onclick="toggleDropdown(this)">
             <span>Other Notable Awards</span>
             <span class="dropdown-btn">v</span>
           </div>
           <div class="dropdown-body">
             Best User Experience (Hackathon Jam 2026)<br />2nd Place Programming
-            Contest (SIBOL - ALPAS Arts & Tech Week 2022)
+            Contest (SIBOL - ALPAS Arts & Tech Week 2022)<br />Research and
+            Innovation Award (CIIT SHS Graduation S.Y. 2022-2023)
           </div>
         </div>
       </div>

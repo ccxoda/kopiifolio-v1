@@ -477,21 +477,21 @@ body {
 }
 
 .resume-card-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   color: #5050a0;
   margin-bottom: 2px;
 }
 
 .resume-card-sub {
-  font-size: 16px;
+  font-size: 20px;
   font-style: italic;
   color: #444;
   margin-bottom: 2px;
 }
 
 .resume-card-date {
-  font-size: 16px;
+  font-size: 20px;
   color: #1a1a3a;
 }
 
@@ -597,7 +597,7 @@ body {
   align-items: center;
   cursor: pointer;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
   color: #1a1a3e;
   user-select: none;
 }
@@ -614,7 +614,7 @@ body {
 .dropdown-body {
   display: none;
   padding: 10px 12px;
-  font-size: 18px;
+  font-size: 20px;
   color: #1a1a3e;
   background: #f4f2ff;
   /* line-height: 1.8; */
@@ -626,4 +626,14 @@ body {
 
 .dropdown.open .dropdown-btn {
   transform: rotate(180deg);
+}
+
+.tag {
+  display: inline-block;
+  background: #e0ddff;
+  color: #3a3a6e;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid #1a1a3a;
+  margin: 2px;
 }

@@ -23,3 +23,24 @@ const educBgData = [
     date: "August 2021 - June 2023",
   },
 ];
+
+const skillsData = [
+  {
+    category: "Frontend & Design",
+    items: ["HTML5", "CSS", "JavaScript", "React", "UI/UX"],
+  },
+  {
+    category: "Backend & Database",
+    items: ["Java", "C++", "PHP", "Node.js", "MySQL", "MongoDB"],
+  },
+  {
+    category: "Tools & Softwares",
+    items: [
+      "Visual Studio Code",
+      "Netbeans",
+      "Github",
+      "Figma",
+      "Clip Studio Paint",
+    ],
+  },
+];

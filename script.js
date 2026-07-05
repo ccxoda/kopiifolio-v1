@@ -118,7 +118,33 @@ function renderResume() {
     .join("");
 }
 
+function renderTags(tagsArray) {
+  return tagsArray.map((tag) => `<span class="tag">${tag}</span>`).join("");
+}
+
+//skills
+function renderSkills() {
+  const skillsContainer = document.getElementById("skills-list");
+  skillsContainer.innerHTML = skillsData
+    .map(
+      (category) => `
+    <div class="dropdown">
+      <div class="dropdown-header" onclick="toggleDropdown(this)">
+        <span>${category.category}</span>
+        <span class="dropdown-btn">v</span>
+      </div>
+      <div class="dropdown-body">
+        ${renderTags(category.items)}
+      </div>
+    </div>
+    `,
+    )
+    .join("");
+}
+
 window.addEventListener("load", () => {
   initMusicPlayer();
   renderResume();
+  renderTags(skillsData);
+  renderSkills();
 });
