@@ -84,4 +84,41 @@ function initMusicPlayer() {
   mp.style.left = dr.width - mp.offsetWidth - 20 + "px";
   mp.style.top = dr.height - mp.offsetHeight - 20 + "px";
 }
+
 window.addEventListener("load", initMusicPlayer);
+
+//ABOUT WORK + EDUC PART
+function renderResume() {
+  //work experience
+  const workContainer = document.getElementById("work-list");
+  workContainer.innerHTML = workExpData
+    .map(
+      (item) => `
+    <div class="resume-card">
+      <div class="resume-card-title">${item.title}</div>
+      <div class="resume-card-sub">${item.company}</div>
+      <div class="resume-card-date">${item.date}</div>
+    </div>
+    `,
+    )
+    .join("");
+
+  //educational background
+  const eduContainer = document.getElementById("educ-list");
+  eduContainer.innerHTML = educBgData
+    .map(
+      (item) => `
+    <div class="resume-card">
+      <div class="resume-card-title">${item.title}</div>
+      <div class="resume-card-sub">${item.school}</div>
+      <div class="resume-card-date">${item.date}</div>
+    </div>
+    `,
+    )
+    .join("");
+}
+
+window.addEventListener("load", () => {
+  initMusicPlayer();
+  renderResume();
+});
