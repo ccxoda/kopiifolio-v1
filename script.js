@@ -142,9 +142,32 @@ function renderSkills() {
     .join("");
 }
 
+function renderCoding() {
+  const codeContainer = document.getElementById("coding-list");
+  codeContainer.innerHTML = codingData
+    .map(
+      (project, index) => `
+    <div class="coding-card">
+      ${
+        project.image
+          ? `<img class="coding-card-thumb" src="${project.image} alt="${project.title}" />`
+          : `<div class="coding-card-thumb-placeholder"></div>`
+      }
+      <div class="coding-card-info">
+        <div class="coding-card-title">${project.title}</div>
+        <div class="coding-card-tags">${renderTags(project.tags)}</div>
+        <span class="coding-card-link">view project</span>
+      </div>
+    </div>
+  `,
+    )
+    .join("");
+}
+
 window.addEventListener("load", () => {
   initMusicPlayer();
   renderResume();
   renderTags(skillsData);
   renderSkills();
+  renderCoding();
 });
