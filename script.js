@@ -150,7 +150,7 @@ function renderCoding() {
     <div class="coding-card">
       ${
         project.image
-          ? `<img class="coding-card-thumb" src="${project.image} alt="${project.title}" />`
+          ? `<img class="coding-card-thumb" src="${project.image}" alt="${project.title}" />`
           : `<div class="coding-card-thumb-placeholder"></div>`
       }
       <div class="coding-card-info">

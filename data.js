@@ -42,6 +42,7 @@ const skillsData = [
       "Figma",
       "Clip Studio Paint",
       "Twine",
+      "Medibang Paint",
     ],
   },
 ];
@@ -49,7 +50,7 @@ const skillsData = [
 const codingData = [
   {
     title: "UnMasked",
-    image: "",
+    image: "assets/code-projects/unmasked.png",
     tags: ["HTML", "React", "CSS"],
     link: "https://github.com/berired/UnMasked",
     video: "",
@@ -57,7 +58,7 @@ const codingData = [
   },
   {
     title: "Click&Link",
-    image: "",
+    image: "assets/code-projects/clicknlink.png",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/julianasj/ClickLink",
     video: "",
@@ -65,7 +66,7 @@ const codingData = [
   },
   {
     title: "CafeLog",
-    image: "",
+    image: "assets/code-projects/cafelog.png",
     tags: ["HTML", "CSS", "PHP"],
     link: "https://github.com/zalnimations/EMC001_Finals",
     video: "",
@@ -73,7 +74,7 @@ const codingData = [
   },
   {
     title: "DFA Cash Register System",
-    image: "",
+    image: "assets/code-projects/dfacashregis.png",
     tags: ["Java", "Netbeans", "MySQL"],
     link: "https://github.com/automatatheory/cashregister-automata",
     video: "",
@@ -81,7 +82,7 @@ const codingData = [
   },
   {
     title: "Invite System",
-    image: "",
+    image: "assets/code-projects/cppinvsys.png",
     tags: ["C++"],
     link: "https://github.com/carvonkopii/InviteSystem",
     video: "",
@@ -89,7 +90,7 @@ const codingData = [
   },
   {
     title: "BlataDitz",
-    image: "",
+    image: "assets/code-projects/blataditz.png",
     tags: ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
     link: "https://github.com/kiefgc/Blata-Ditz-Online-Retail-Store",
     video: "",
@@ -97,7 +98,7 @@ const codingData = [
   },
   {
     title: "CIIT Friend Finder",
-    image: "",
+    image: "assets/code-projects/ciitfriendfinder.png",
     tags: ["JavaScript"],
     link: "https://github.com/CIIT-Friend-Finder-App/ciit-friend-finder-master",
     video: "",
@@ -105,7 +106,7 @@ const codingData = [
   },
   {
     title: "LaGupit SHS Thesis Project",
-    image: "",
+    image: "assets/code-projects/lagupit.png",
     tags: ["HTML", "JavaScript", "CSS", "PHP"],
     link: "https://github.com/ChristianCruz05/LaGupit",
     video: "",
@@ -113,7 +114,7 @@ const codingData = [
   },
   {
     title: "Tagong-Gubat Concept Game",
-    image: "",
+    image: "assets/code-projects/tagong-gubat.png",
     tags: ["Figma", "Clip Studio Paint"],
     link: "https://www.figma.com/proto/8G0KNfBkqLotUERXwRE0Vy/Tagong-Gubat-Prototype?node-id=1-3&t=1kZhgF00I2i07JPp-1",
     video: "",
@@ -121,9 +122,25 @@ const codingData = [
   },
   {
     title: "Bibbleton Mansion - an Interactive Story",
-    image: "",
-    tags: ["Figma", "Clip Studio Paint"],
+    image: "assets/code-projects/bibblemansiontwine.png",
+    tags: ["HTML", "Twine"],
     link: "https://carvonkopii.github.io/bibble-mansion/",
+    video: "",
+    desc: "asdasdsadsada",
+  },
+  {
+    title: "Meadow Valley Concept Game",
+    image: "assets/code-projects/meadowvalley.png",
+    tags: ["Figma", "Medibang Paint"],
+    link: "https://www.figma.com/proto/yUanKbVWUpquEow0wMHlfv/Meadow-Valley?node-id=47-13&starting-point-node-id=47%3A13&t=TNBiMcH19QmjHl3s-1",
+    video: "",
+    desc: "asdasdsadsada",
+  },
+  {
+    title: "Mobile Application for Staff",
+    image: "assets/code-projects/staffmobileapp.png",
+    tags: ["Figma"],
+    link: "https://www.figma.com/proto/hz2u2OIQchZzaDSLGEXaFQ/hackathon-team-proj?node-id=16-864&p=f&t=2XII7frWcDl8Dsfz-1&scaling=scale-down&content-scaling=fixed&page-id=16%3A862&starting-point-node-id=16%3A864",
     video: "",
     desc: "asdasdsadsada",
   },

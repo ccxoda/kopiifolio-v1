@@ -495,22 +495,26 @@ body {
   color: #1a1a3a;
 }
 
+/* .coding-popup-body, */
 .popup-scroll {
   height: 200px;
   overflow-y: scroll;
   padding-right: 10px;
 }
 
+.coding-popup-body::-webkit-scrollbar,
 .popup-scroll::-webkit-scrollbar {
   width: 12px;
   /* padding-right: 1rem; */
 }
 
+.coding-popup-body::-webkit-scrollbar-track,
 .popup-scroll::-webkit-scrollbar-track {
   background: #a0a0e8;
   border-radius: 10px;
 }
 
+.coding-popup-body::-webkit-scrollbar-thumb,
 .popup-scroll::-webkit-scrollbar-thumb {
   background: #7070b8;
   border-radius: 10px;
@@ -641,7 +645,7 @@ body {
 /*CODING FOLDER*/
 .coding-popup-body {
   /* width: 520px; */
-  max-height: 420px;
+  max-height: 350px;
   overflow-y: auto;
   padding: 10px;
 }
