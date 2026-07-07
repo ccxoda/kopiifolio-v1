@@ -120,7 +120,7 @@ body {
   background: #f4f2ff;
   border-top: 1px solid #7070b8;
   padding: 0.5rem 1.5rem 1rem;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .home-content-name {
