@@ -95,7 +95,7 @@ body {
   background: #5050a0;
   z-index: 20;
   border: 5px solid #7070b8;
-  border-radius: 4px;
+  border-radius: 10px;
   box-shadow:
     inset 0 0 10px #7070b8,
     0 0 5px #7070b8;
@@ -120,6 +120,7 @@ body {
   background: #f4f2ff;
   border-top: 1px solid #7070b8;
   padding: 0.5rem 1.5rem 1rem;
+  border-radius: 10px;
 }
 
 .home-content-name {
@@ -533,10 +534,11 @@ body {
   border-radius: 4px;
   overflow: hidden;
   min-width: 240px;
-  max-width: 500px;
+  width: 400px;
+  /* max-width: 500px; */
   background: #f4f2ff;
   border: 5px solid #7070b8;
-  border-radius: 4px;
+  border-radius: 10px;
   box-shadow:
     inset 0 0 10px #7070b8,
     0 0 5px #7070b8;
@@ -557,13 +559,13 @@ body {
 
 .popup-close {
   font-family: "vt323", monospace;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
-  background: #8050a0;
-  border: 1px solid #c080d0;
-  padding: 0px 6px;
+  /* background: #8050a0;
+  border: 1px solid #c080d0; */
+  padding: 6px;
   cursor: pointer;
-  border-radius: 2px;
+  /* border-radius: 5px; */
 }
 
 .popup-title {
@@ -643,6 +645,10 @@ body {
 }
 
 /*CODING FOLDER*/
+/* .popup-coding {
+  width: 600px;
+} */
+
 .coding-popup-body {
   /* width: 520px; */
   max-height: 350px;

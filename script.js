@@ -1,12 +1,3 @@
-// const popLabels = {
-//   about: "👤 about",
-//   skills: "🛠 skills",
-//   awards: "🏆 awards",
-//   coding: "💻 coding",
-//   artworks: "🖼 artworks",
-//   message: "📨 message",
-// };
-
 const opened = {};
 let topZ = 30,
   drag = null,
@@ -122,6 +113,18 @@ function renderTags(tagsArray) {
   return tagsArray.map((tag) => `<span class="tag">${tag}</span>`).join("");
 }
 
+//ABOUT ME
+function renderTitles() {
+  const titleContainer = document.getElementById("jobTitle-list");
+  titleContainer.innerHTML = jobTitleData
+    .map(
+      (item) => `
+    <span class="tag">${item}</span>
+  `,
+    )
+    .join("");
+}
+
 //skills
 function renderSkills() {
   const skillsContainer = document.getElementById("skills-list");
@@ -167,6 +170,7 @@ function renderCoding() {
 window.addEventListener("load", () => {
   initMusicPlayer();
   renderResume();
+  renderTitles();
   renderTags(skillsData);
   renderSkills();
   renderCoding();
