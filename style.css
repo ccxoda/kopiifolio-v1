@@ -289,7 +289,7 @@ body {
   display: flex;
   border-radius: 20px;
   align-items: center;
-  gap: 16px;
+  gap: 25px;
   z-index: 20;
   padding: 0 20px;
   width: fit-content;
@@ -302,11 +302,14 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "vt323", monospace;
-  font-size: 24px;
+  font-size: 35px;
   color: #e0ddff;
   cursor: pointer;
-  border-radius: 50%;
   transition: all 0.2s ease-in-out;
+}
+
+.soc-ico:hover {
+  transform: scale(1.3);
 }
 
 /* MUSIC PLAYER */

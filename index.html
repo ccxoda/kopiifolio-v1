@@ -193,7 +193,7 @@
     <div
       class="popup"
       id="popup-codingProjects"
-      style="width: 600px; right: 18px; top: 65px"
+      style="width: 600px; right: 18px; top: 200px"
     >
       <div
         class="popup-bar"
@@ -214,14 +214,60 @@
 
     <!--CODING PROJECTS OVERLAY-->
 
+    <!--MESSAGE POPUP-->
     <div class="chat-bubble" onclick="openPop('message')">Send a message!</div>
+    <div
+      class="popup"
+      id="popup-message"
+      style="width: 250px; right: 100px; top: 90px"
+    >
+      <div class="popup-bar" onmousedown="startDrag(event, 'popup-message')">
+        <span class="home-tb-title">message</span>
+        <span class="popup-close" onclick="closePop('message')">[x]</span>
+      </div>
+    </div>
 
     <div class="socials">
-      <div class="soc-ico" title="Email">✉</div>
-      <div class="soc-ico" title="LinkedIn">in</div>
-      <div class="soc-ico" title="GitHub">GH</div>
-      <div class="soc-ico" title="Facebook">f</div>
-      <div class="soc-ico" title="Twitter/X">✕</div>
+      <div
+        class="soc-ico"
+        title="Email"
+        onclick="window.location.href = 'mailto:carvonxoda07@gmail.com'"
+      >
+        ✉
+      </div>
+      <div
+        class="soc-ico"
+        title="LinkedIn"
+        onclick="
+          window.open(
+            'https://www.linkedin.com/in/johannah-magadia-a15093280/',
+            '_blank',
+          )
+        "
+      >
+        in
+      </div>
+      <div
+        class="soc-ico"
+        title="GitHub"
+        onclick="window.open('https://github.com/carvonkopii', '_blank')"
+      >
+        GH
+      </div>
+      <div
+        class="soc-ico"
+        title="Facebook"
+        onclick="window.open('https://www.facebook.com/carvonkopii/', '_blank')"
+      >
+        f
+      </div>
+      <div
+        class="soc-ico"
+        title="Twitter/X"
+        onclick="window.open('https://x.com/carvonkopii', '_blank')"
+      >
+        ✕
+      </div>
     </div>
 
     <div class="music-player" id="popup-mp">
