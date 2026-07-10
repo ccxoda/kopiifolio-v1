@@ -714,3 +714,25 @@ body {
   text-align: right;
   display: block;
 }
+
+/*SEND A MESSAGE*/
+/* .form-status {
+  font-size: 20px;
+  margin-top: 8px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  display: none;
+}
+
+.form-status.success {
+  display: block;
+  background: #bcc2fd;
+  border: 2px solid #a0a0e8;
+}
+
+.form-status.error {
+  display: block;
+  background: #e0ddff;
+  color: #3a3a6e;
+  border: 2px solid #c8c8c8;
+} */
