@@ -167,27 +167,27 @@ function renderCoding() {
     .join("");
 }
 
-function initContactForm() {
-  const form = document.getElementById("contact-form");
-  const status = document.getElementById("form-status");
-  const btn = document.getElementById("submit-btn");
+// function initContactForm() {
+//   const form = document.getElementById("contact-form");
+//   const status = document.getElementById("form-status");
+//   const btn = document.getElementById("submit-btn");
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault(); //stops page from refreshing
+//   form.addEventListener("submit", async (e) => {
+//     e.preventDefault(); //stops page from refreshing
 
-    btn.textContent = "sending...";
-    btn.disabled = true;
-    status.className = "form-status";
-    status.textContent = "";
+//     btn.textContent = "sending...";
+//     btn.disabled = true;
+//     status.className = "form-status";
+//     status.textContent = "";
 
-    // try {
-    //   const response = await fetch('')
-    // }
-  });
-}
+//     // try {
+//     //   const response = await fetch('')
+//     // }
+//   });
+// }
 
 window.addEventListener("load", () => {
-  initMusicPlayer();
+  // initMusicPlayer();
   renderResume();
   renderTitles();
   renderTags(skillsData);
