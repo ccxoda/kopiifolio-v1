@@ -423,9 +423,11 @@ body {
 }
 
 .about-bio {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
   color: #1a1a3e;
+  font-family: "Courier Prime", monospace;
+  text-align: justify;
 }
 
 .about-meta {
@@ -439,8 +441,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  font-size: 14px;
+  font-size: 16px;
   color: #1a1a3e;
+  font-family: "Courier Prime", monospace;
 }
 
 .about-cv {
@@ -488,15 +491,17 @@ body {
 }
 
 .resume-card-sub {
-  font-size: 20px;
+  font-size: 16px;
   font-style: italic;
   color: #444;
   margin-bottom: 2px;
+  font-family: "Courier Prime", monospace;
 }
 
 .resume-card-date {
-  font-size: 20px;
+  font-size: 16px;
   color: #1a1a3a;
+  font-family: "Courier Prime", monospace;
 }
 
 /* .coding-popup-body, */
@@ -623,9 +628,10 @@ body {
 .dropdown-body {
   display: none;
   padding: 10px 12px;
-  font-size: 20px;
+  font-size: 16px;
   color: #1a1a3e;
   background: #f4f2ff;
+  font-family: "Courier Prime", monospace;
   /* line-height: 1.8; */
 }
 
@@ -706,13 +712,16 @@ body {
 
 .coding-card-tags {
   margin-bottom: 5px;
+  font-family: "Courier Prime", monospace;
+  font-size: 14px;
 }
 
 .coding-card-link {
-  font-size: 11px;
+  font-size: 12px;
   color: #5050a0;
   text-align: right;
   display: block;
+  font-family: "Courier Prime", monospace;
 }
 
 /*SEND A MESSAGE*/
