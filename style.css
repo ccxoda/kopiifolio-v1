@@ -303,10 +303,10 @@ a.soc-ico {
   justify-content: center;
   font-family: "vt323", monospace;
   font-size: 35px;
+  text-decoration: none;
   color: #e0ddff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  text-decoration: none;
 }
 
 a.soc-ico:hover {
